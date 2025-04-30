@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Define custom properties for colors and fonts */
+:root {
+  /* Color variables */
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Font variables */
+  --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+
+  /* Theme integration (custom properties for Tailwind if needed) */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/* Apply default body styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Make sure the body fills the entire screen */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure the main layout container fills the screen */
+#__next {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Utility classes for responsive design */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Allow consistent typography styles */
+button {
+  cursor: pointer;
+}
+
+/* Optional: Tailwind Typography (adjust as per your needs) */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
